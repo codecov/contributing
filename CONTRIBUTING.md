@@ -10,6 +10,25 @@
 
 Below are the guidelines for contributing to any of Codecov's repositories. Please review them before committing to the repository, opening a pull request, or creating an issue.
 
+Table of Contents:
+
+- [Commit Messages](#commit-messages)
+  - [General Rules](#general-rules)
+  - [Squashing](#squashing)
+  - [Commit Message Format](#commit-message-format)
+  - [Type](#type)
+  - [Subject](#subject)
+  - [Body](#body)
+  - [Footer](#footer)
+- [Code Review](#code-review)
+  - [Who should be reviewing code?](#who-should-be-reviewing-code)
+  - [Why Pull Requests](#why-pull-requests)
+  - [Commit Guidelines](#commit-guidelines)
+  - [Code Reviews are for ...](#code-reviews-are-for)
+  - [Code Reviews are not for ...](#code-reviews-are-not-for)
+  - [Guidelines for *Submitters*](#guidelines-for-submitters)
+  - [Guidelines for *Reviewers*](#guidelines-for-reviewers)
+
 # Commit Messages
 
 We have precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history.
@@ -106,8 +125,6 @@ When creating a pull request, reference any tickets or Sentry issues which are b
 ## Why Pull Requests
 
 Because Sentry is an open source project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
-
-
 
 ## Commit Guidelines
 
