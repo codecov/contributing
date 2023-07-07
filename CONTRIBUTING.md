@@ -10,6 +10,25 @@
 
 Below are the guidelines for contributing to any of Codecov's repositories. Please review them before committing to the repository, opening a pull request, or creating an issue.
 
+#### Table of Contents:
+
+- [Commit Messages](#commit-messages)
+  - [General Rules](#general-rules)
+  - [Squashing](#squashing)
+  - [Commit Message Format](#commit-message-format)
+  - [Type](#type)
+  - [Subject](#subject)
+  - [Body](#body)
+  - [Footer](#footer)
+- [Code Review](#code-review)
+  - [Who should be reviewing code?](#who-should-be-reviewing-code)
+  - [Why Pull Requests](#why-pull-requests)
+  - [Commit Guidelines](#commit-guidelines)
+  - [Code Reviews are for ...](#code-reviews-are-for)
+  - [Code Reviews are not for ...](#code-reviews-are-not-for)
+  - [Guidelines for *Submitters*](#guidelines-for-submitters)
+  - [Guidelines for *Reviewers*](#guidelines-for-reviewers)
+
 # Commit Messages
 
 We have precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history.
@@ -24,11 +43,15 @@ We have precise rules over how our git commit messages can be formatted. This le
 6. Use the body to explain what and why vs. how
 7. Each commit should be a single, stable change
 
+[Return to top](#contributing)
+
 ## Squashing
 
 When you are squashing your branch, it’s important to make sure you update the commit message. If you’re using GitHub’s UI it will by default create a new commit message which is a combination of all commits and **does not follow the commit guidelines.**
 
 If you’re working locally, it often can be useful to --amend a commit, or utilize rebase -i to reorder, squash, and reword your commits.
+
+[Return to top](#contributing)
 
 ## Commit Message Format
 
@@ -57,6 +80,8 @@ this PR switches that to onChange.
 Fixes GH-1234
 ```
 
+[Return to top](#contributing)
+
 ## Type
 |Type|Definition|
 |-|-|
@@ -72,6 +97,8 @@ Fixes GH-1234
 |**meta:** | Some meta information in the repo changes (example scopes: owner files, editor config etc.)
 |**license:** | Changes to licenses
 
+[Return to top](#contributing)
+
 ## Subject
 The subject contains a succinct description of the change:
 
@@ -79,9 +106,13 @@ Use the imperative, present tense: “change” not “changed” nor “changes
 Capitalize the first letter
 No dot (.) at the end
 
+[Return to top](#contributing)
+
 ## Body
 
 Just as in the **subject**, use the imperative, present tense: “change” not “changed” nor “changes”. The body should include the motivation for the change and contrast this with previous behavior.
+
+[Return to top](#contributing)
 
 ## Footer
 
@@ -89,11 +120,15 @@ The footer should contain any information about **Breaking Changes** and is also
 
 Breaking Changes should start with the word `BREAKING CHANGE:` with a space or two newlines. The rest of the commit message is then used for this.
 
+[Return to top](#contributing)
+
 # Code Review
 
 Code review is mandatory at Codecov. This adds overhead to each change, but ensures that simple, often overlooked problems are more easily avoided. Code review helps build shared context and collective ownership. It is also an opportunity to collaborate with other teams. Finally, code review can identify several classes of problem before customers are exposed to them.
 
 Code review is managed via GitHub’s Pull Requests (see below for rationale). Templates may exist on repositories, but if they do not, consider [creating one](https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/).'
+
+[Return to top](#contributing)
 
 ## Who should be reviewing code?
 
@@ -103,15 +138,19 @@ Code review is an opportunity to improve your mentoring and communication skills
 
 When creating a pull request, reference any tickets or Sentry issues which are being addressed. Additionally **@mention** an appropriate team (or teams) for review.
 
+[Return to top](#contributing)
+
 ## Why Pull Requests
 
 Because Sentry is an open source project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
 
-
+[Return to top](#contributing)
 
 ## Commit Guidelines
 
 See the [Commit Messages](#commit-messages) section.
+
+[Return to top](#contributing)
 
 ## Code Reviews are for …
 
@@ -191,6 +230,8 @@ As much as possible, we use automation to enforce code style and test coverage, 
 - Migrations have a deployment plan
 - Unused or superfluous code isn’t committed accidentally
 
+[Return to top](#contributing)
+
 ## Code Reviews are not for …
 
 ### Passing responsibility onto the reviewer
@@ -213,7 +254,11 @@ The goal of code reviews is to **reduce risk**, not to produce perfect code. It�
 
 Please be pragmatic, and consider the cost of each incremental request for changes.
 
+[Return to top](#contributing)
+
 ## Guidelines for *Submitters*
+
+[Return to top](#contributing)
 
 ### Try to organize your work in a way that makes it conducive to review
 
@@ -256,7 +301,11 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 - Request review again via the "Reviewers" dropdown (There should be a yellow dot next to their name again).
 - Don’t rely on reviewers' mind-reading skills to know that you’re ready to have them look things over again.
 
+[Return to top](#contributing)
+
 ## Guidelines for *Reviewers*
+
+[Return to top](#contributing)
 
 ### Be polite and empathetic
 
@@ -274,3 +323,5 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 
 - We recommend checking for open code reviews at the start and end of every day.
 - [Github's Review Requests tab](https://github.com/pulls/review-requested) can be a helpful place to keep track of these.
+
+[Return to top](#contributing)
