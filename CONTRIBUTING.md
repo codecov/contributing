@@ -287,10 +287,6 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 - You’ll often catch code mistakes you didn’t see when writing it.
 - This is also a good time to leave comments and refresh your memory in order to write a more helpful description.
 
-### Assign no more than 1-3 reviewers
-- It’s tempting to want to involve as many people as possible, but it can often be distracting, and create a situation where nobody’s clear on who should actually perform the review.
-- If your work spans multiple teams (and thus, many reviewers), consider breaking up your PR into multiple compatible patches (e.g. a back-end change and a front-end change).
-
 ### Avoid rebasing unnecessarily
 
 - After a rebase, previous review comments will be orphaned from their now non-existent parent commits, making review more difficult
