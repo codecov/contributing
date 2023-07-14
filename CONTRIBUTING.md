@@ -67,7 +67,7 @@ The **header** is mandatory and the **scope** of the header is optional. If you 
 
 Any line of the commit message should not be longer 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.
 
-The footer should contain a closing reference to an issue as well as a relevant Sentry issue if any.
+The footer should contain a closing reference to an issue as well as a relevant Codecov issue if any.
 
 Example:
 
@@ -136,13 +136,13 @@ All engineers should be reviewing code. As you gain more experience and context 
 
 Code review is an opportunity to improve your mentoring and communication skills. Code review can have the important function of teaching engineers about the languages, frameworks and technologies we use in a collaborative environment that is about the changes being made.
 
-When creating a pull request, reference any tickets or Sentry issues which are being addressed. Additionally **@mention** an appropriate team (or teams) for review.
+When creating a pull request, reference any tickets or Codecov issues which are being addressed. Additionally **@mention** an appropriate team (or teams) for review.
 
 [Return to top](#contributing)
 
 ## Why Pull Requests
 
-Because Sentry is an open source project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
+Because Codecov is an open source project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
 
 [Return to top](#contributing)
 
@@ -172,7 +172,7 @@ When reviewing code, consider if the interactions of the various pieces in the c
 
 ### Tests Included
 
-Look for tests. There should be functional tests, integration tests or end-to-end tests covering the changes. If not, ask for them. At Sentry we rely on our test suite to maintain a high quality bar and ship rapidly.
+Look for tests. There should be functional tests, integration tests or end-to-end tests covering the changes. If not, ask for them. At Codecov we rely on our test suite to maintain a high quality bar and ship rapidly.
 
 When reviewing tests double check that the tests cover the requirements of the project or that they cover the defect being fixed. Tests should avoid branching and looping as much as possible to prevent bugs in the test code from gaining a foothold.
 
@@ -240,7 +240,7 @@ It is not the responsibility of the reviewer that your code is correct, is bug f
 
 ### Boasting about your programming knowledge
 
-As a reviewer, try to stick to objective improvements and make a best-intent assumption that the submitter has done their homework. Sentry is a No Flex Zone™.
+As a reviewer, try to stick to objective improvements and make a best-intent assumption that the submitter has done their homework. Codecov is a No Flex Zone™.
 
 ### Introducing long-term architectural changes for the first time
 
