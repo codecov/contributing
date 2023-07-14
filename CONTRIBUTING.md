@@ -102,9 +102,9 @@ Fixes GH-1234
 ## Subject
 The subject contains a succinct description of the change:
 
-Use the imperative, present tense: “change” not “changed” nor “changes”
-Capitalize the first letter
-No dot (.) at the end
+- Use the imperative, present tense: “change” not “changed” nor “changes”
+- Capitalize the first letter
+- No dot (.) at the end
 
 [Return to top](#contributing)
 
