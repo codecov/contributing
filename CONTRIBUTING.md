@@ -56,14 +56,14 @@ If you’re working locally, it often can be useful to --amend a commit, or util
 ## Commit Message Format
 
 ```text
-<type>: <subject> (<jira-id>)
+<type>: <subject> (<issue-id>)
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
 
-The **header** is mandatory and the **scope** of the header is optional. If you have a Jira issue to link to, add the **jira-id** the commit belongs to. This helps to connect changes back to Jira tickets.
+The **header** is mandatory and the **scope** of the header is optional. If you have a GitHub issue to link to, add the **issue-id** the commit belongs to. This helps to connect changes back to GitHub issues.
 
 Any line of the commit message should not be longer 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.
 
@@ -72,12 +72,10 @@ The footer should contain a closing reference to an issue as well as a relevant 
 Example:
 
 ```text
-fix: Switch event handler on input (CODE-1234)
+fix: Switch event handler on input (GH-1234)
 
 Input was previously using onBlur which caused some issues. So
 this PR switches that to onChange.
-
-Fixes GH-1234
 ```
 
 [Return to top](#contributing)
