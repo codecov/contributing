@@ -55,29 +55,29 @@ If you’re working locally, it often can be useful to --amend a commit, or util
 
 ## Commit Message Format
 
+> **Note**: This commit message format is only for the squash merge commit that occurs when you merge your PR on GitHub
+
 ```text
-<type>: <subject> (<jira-id>)
+<type>: <subject> (<issue-id>)
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
 
-The **header** is mandatory and the **scope** of the header is optional. If you have a Jira issue to link to, add the **jira-id** the commit belongs to. This helps to connect changes back to Jira tickets.
+The **header** is mandatory and the **scope** of the header is optional. If you have a GitHub issue to link to, add the **issue-id** the commit belongs to. This helps to connect changes back to GitHub issues.
 
 Any line of the commit message should not be longer 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.
 
-The footer should contain a closing reference to an issue as well as a relevant Sentry issue if any.
+The footer should contain a closing reference to an issue as well as a relevant Codecov issue if any.
 
 Example:
 
 ```text
-fix: Switch event handler on input (CODE-1234)
+fix: Switch event handler on input (GH-1234)
 
 Input was previously using onBlur which caused some issues. So
 this PR switches that to onChange.
-
-Fixes GH-1234
 ```
 
 [Return to top](#contributing)
@@ -102,9 +102,9 @@ Fixes GH-1234
 ## Subject
 The subject contains a succinct description of the change:
 
-Use the imperative, present tense: “change” not “changed” nor “changes”
-Capitalize the first letter
-No dot (.) at the end
+- Use the imperative, present tense: “change” not “changed” nor “changes”
+- Capitalize the first letter
+- No dot (.) at the end
 
 [Return to top](#contributing)
 
@@ -136,13 +136,13 @@ All engineers should be reviewing code. As you gain more experience and context 
 
 Code review is an opportunity to improve your mentoring and communication skills. Code review can have the important function of teaching engineers about the languages, frameworks and technologies we use in a collaborative environment that is about the changes being made.
 
-When creating a pull request, reference any tickets or Sentry issues which are being addressed. Additionally **@mention** an appropriate team (or teams) for review.
+When creating a pull request, reference any tickets or Codecov issues which are being addressed. Additionally **@mention** an appropriate team (or teams) for review.
 
 [Return to top](#contributing)
 
 ## Why Pull Requests
 
-Because Sentry is an open source project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
+Because Codecov is an open source project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
 
 [Return to top](#contributing)
 
@@ -172,7 +172,7 @@ When reviewing code, consider if the interactions of the various pieces in the c
 
 ### Tests Included
 
-Look for tests. There should be functional tests, integration tests or end-to-end tests covering the changes. If not, ask for them. At Sentry we rely on our test suite to maintain a high quality bar and ship rapidly.
+Look for tests. There should be functional tests, integration tests or end-to-end tests covering the changes. If not, ask for them. At Codecov we rely on our test suite to maintain a high quality bar and ship rapidly.
 
 When reviewing tests double check that the tests cover the requirements of the project or that they cover the defect being fixed. Tests should avoid branching and looping as much as possible to prevent bugs in the test code from gaining a foothold.
 
@@ -240,7 +240,7 @@ It is not the responsibility of the reviewer that your code is correct, is bug f
 
 ### Boasting about your programming knowledge
 
-As a reviewer, try to stick to objective improvements and make a best-intent assumption that the submitter has done their homework. Sentry is a No Flex Zone™.
+As a reviewer, try to stick to objective improvements and make a best-intent assumption that the submitter has done their homework. Codecov is a No Flex Zone™.
 
 ### Introducing long-term architectural changes for the first time
 
@@ -287,8 +287,8 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 - You’ll often catch code mistakes you didn’t see when writing it.
 - This is also a good time to leave comments and refresh your memory in order to write a more helpful description.
 
-### Assign no more than 1-3 reviewers
-- It’s tempting to want to involve as many people as possible, but it can often be distracting, and create a situation where nobody’s clear on who should actually perform the review.
+### Assign Relevant for Review 
+- To ensure the correct people get their eyes on the PR, please request the review of the respective team to review the PR
 - If your work spans multiple teams (and thus, many reviewers), consider breaking up your PR into multiple compatible patches (e.g. a back-end change and a front-end change).
 
 ### Avoid rebasing unnecessarily
