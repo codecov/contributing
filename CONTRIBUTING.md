@@ -55,6 +55,8 @@ If you’re working locally, it often can be useful to --amend a commit, or util
 
 ## Commit Message Format
 
+> **Note**: This commit message format is only for the squash merge commit that occurs when you merge your PR on GitHub
+
 ```text
 <type>: <subject> (<issue-id>)
 <BLANK LINE>
