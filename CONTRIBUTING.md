@@ -58,27 +58,25 @@ If you’re working locally, it often can be useful to --amend a commit, or util
 > **Note**: This commit message format is only for the squash merge commit that occurs when you merge your PR on GitHub
 
 ```text
-<type>: <subject> (<issue-id>)
+<type>: <subject> (<pr-number>)
+```
+
+The **header** should be set to the squash merge title which will be the commit title.
+
+```text
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
 
-The **header** is mandatory and the **scope** of the header is optional. If you have a GitHub issue to link to, add the **issue-id** the commit belongs to. This helps to connect changes back to GitHub issues.
-
-Any line of the commit message should not be longer 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.
+Any line of the commit description should not be longer 100 characters! This allows the description to be easier to read on GitHub as well as in various git tools.
 
 The footer should contain a closing reference to an issue as well as a relevant Codecov issue if any.
 
 Example:
 
-```text
-fix: Switch event handler on input (GH-1234)
-
-Input was previously using onBlur which caused some issues. So
-this PR switches that to onChange.
-```
+![Screenshot 2023-07-19 at 10 13 20 AM](https://github.com/codecov/contributing/assets/105234307/88424f25-208e-4bf2-9e3b-0ca2b430ca74)
 
 [Return to top](#contributing)
 
