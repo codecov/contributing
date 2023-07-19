@@ -26,8 +26,8 @@ Below are the guidelines for contributing to any of Codecov's repositories. Plea
   - [Commit Guidelines](#commit-guidelines)
   - [Code Reviews are for ...](#code-reviews-are-for)
   - [Code Reviews are not for ...](#code-reviews-are-not-for)
-  - [Guidelines for *Submitters*](#guidelines-for-submitters)
-  - [Guidelines for *Reviewers*](#guidelines-for-reviewers)
+  - [Guidelines for _Submitters_](#guidelines-for-submitters)
+  - [Guidelines for _Reviewers_](#guidelines-for-reviewers)
 
 # Commit Messages
 
@@ -81,23 +81,25 @@ Example:
 [Return to top](#contributing)
 
 ## Type
-|Type|Definition|
-|-|-|
-|**build:** | Changes that affect the build system or external dependencies (example scopes: webpack, python, npm)
-|**ci:** | Changes to our CI configuration files and scripts (example scopes: CircleCI, etc.)
-|**docs:** | Documentation only changes
-|**feat:** | A new feature
-|**fix:** | A bug fix
-|**perf:** | A code change that improves performance
-|**ref:** | A code change that neither fixes a bug nor adds a feature (refactor)
-|**style:** | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-|**test:** | Adding missing tests or correcting existing tests
-|**meta:** | Some meta information in the repo changes (example scopes: owner files, editor config etc.)
-|**license:** | Changes to licenses
+
+| Type         | Definition                                                                                             |
+| ------------ | ------------------------------------------------------------------------------------------------------ |
+| **build:**   | Changes that affect the build system or external dependencies (example scopes: webpack, python, npm)   |
+| **ci:**      | Changes to our CI configuration files and scripts (example scopes: CircleCI, etc.)                     |
+| **docs:**    | Documentation only changes                                                                             |
+| **feat:**    | A new feature                                                                                          |
+| **fix:**     | A bug fix                                                                                              |
+| **perf:**    | A code change that improves performance                                                                |
+| **ref:**     | A code change that neither fixes a bug nor adds a feature (refactor)                                   |
+| **style:**   | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) |
+| **test:**    | Adding missing tests or correcting existing tests                                                      |
+| **meta:**    | Some meta information in the repo changes (example scopes: owner files, editor config etc.)            |
+| **license:** | Changes to licenses                                                                                    |
 
 [Return to top](#contributing)
 
 ## Subject
+
 The subject contains a succinct description of the change:
 
 - Use the imperative, present tense: “change” not “changed” nor “changes”
@@ -189,6 +191,7 @@ If you’re making significant architectural, schema, or build changes that will
 - New product behavior that may permanently alter performance characteristics moving forward
 
 ### Double-checking expected behavior
+
 The reviewer should make a genuine attempt to double-check that the goals of the PR appear to be satisfied by the code submitted. This requires the submitter to write a good description of the expected behavior, and why. See also: [Guidelines for submitters below.](#guidelines-for-submitters)
 
 ### Information sharing and professional development
@@ -205,7 +208,7 @@ For example, if a submitter has written a `for` loop to find an item in an array
 
 ```js
 for (let i = 0; i < arr.length; i++) {
-  if (arr[i] === 'thing-i-want') return i;
+  if (arr[i] === "thing-i-want") return i;
 }
 return undefined;
 ```
@@ -213,7 +216,7 @@ return undefined;
 It’s fair game to suggest they instead use:
 
 ```js
-return arr.find(x => x === 'thing-i-want');
+return arr.find((x) => x === "thing-i-want");
 ```
 
 This is a mostly objective improvement: there are fewer variables, fewer statements, and fewer branches, and the method name `find` communicates intent. Suggesting these types of uncontroversial improvements is encouraged.
@@ -248,13 +251,13 @@ While code reviews are great for discussion, they’re not the place to introduc
 
 Code reviews are expensive. Every time you request a change, you’re probably delaying that PR by 24 hours or more. This can severely inhibit our ability to move fast.
 
-The goal of code reviews is to **reduce risk**, not to produce perfect code. It’s okay to ship code in stages, and to commit to improving something later. If you’re thinking – *if we don’t get it correct up-front, we’ll never come back to it* – consider that if it never needs coming back to, perhaps those changes were never necessary in the first place.
+The goal of code reviews is to **reduce risk**, not to produce perfect code. It’s okay to ship code in stages, and to commit to improving something later. If you’re thinking – _if we don’t get it correct up-front, we’ll never come back to it_ – consider that if it never needs coming back to, perhaps those changes were never necessary in the first place.
 
 Please be pragmatic, and consider the cost of each incremental request for changes.
 
 [Return to top](#contributing)
 
-## Guidelines for *Submitters*
+## Guidelines for _Submitters_
 
 [Return to top](#contributing)
 
@@ -285,7 +288,8 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 - You’ll often catch code mistakes you didn’t see when writing it.
 - This is also a good time to leave comments and refresh your memory in order to write a more helpful description.
 
-### Assign Relevant for Review 
+### Assign Relevant for Review
+
 - To ensure the correct people get their eyes on the PR, please request the review of the respective team to review the PR
 - If your work spans multiple teams (and thus, many reviewers), consider breaking up your PR into multiple compatible patches (e.g. a back-end change and a front-end change).
 
@@ -301,7 +305,7 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 
 [Return to top](#contributing)
 
-## Guidelines for *Reviewers*
+## Guidelines for _Reviewers_
 
 [Return to top](#contributing)
 
@@ -309,9 +313,9 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 
 - Avoid accusatory and/or judgmental comments like: “You should have done X”
 
-### Provide *actionable* feedback
+### Provide _actionable_ feedback
 
-- Instead of *“This is bad”*, try *“I feel this could be clearer. What if you renamed variable X to Y?”*
+- Instead of _“This is bad”_, try _“I feel this could be clearer. What if you renamed variable X to Y?”_
 
 ### Distinguish between “requires changes” and “nitpicks”
 
