@@ -302,6 +302,7 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 
 - Request review again via the "Reviewers" dropdown (There should be a yellow dot next to their name again).
 - Don’t rely on reviewers' mind-reading skills to know that you’re ready to have them look things over again.
+- Leave comment resolution to the reviewer so they can easily reference sections that you have addressed.
 
 [Return to top](#contributing)
 
@@ -325,5 +326,6 @@ Please be pragmatic, and consider the cost of each incremental request for chang
 
 - We recommend checking for open code reviews at the start and end of every day.
 - [Github's Review Requests tab](https://github.com/pulls/review-requested) can be a helpful place to keep track of these.
+- Resolve comments when submitter has resolved the issue.
 
 [Return to top](#contributing)
