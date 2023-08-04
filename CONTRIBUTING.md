@@ -142,7 +142,7 @@ When creating a pull request, reference any tickets or Codecov issues which are 
 
 ## Why Pull Requests
 
-Because Codecov is an open source project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
+Because Codecov is a public project maintained via GitHub we want to ensure that the barrier to entry for external contributions is minimal. By using GitHub features when possible, we make it easy for developers familiar with other projects on GitHub.
 
 [Return to top](#contributing)
 
