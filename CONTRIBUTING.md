@@ -20,6 +20,8 @@ Below are the guidelines for contributing to any of Codecov's repositories. Plea
   - [Subject](#subject)
   - [Body](#body)
   - [Footer](#footer)
+- [Pull Request Description](#pull-request-descriptions)
+  - [Use of `Closes`](#use-of-closes)
 - [Code Review](#code-review)
   - [Who should be reviewing code?](#who-should-be-reviewing-code)
   - [Why Pull Requests](#why-pull-requests)
@@ -76,7 +78,7 @@ The footer should contain a closing reference to an issue as well as a relevant 
 
 Example:
 
-![Screenshot 2023-07-19 at 10 13 20 AM](https://github.com/codecov/contributing/assets/105234307/88424f25-208e-4bf2-9e3b-0ca2b430ca74)
+![Screenshot 2023-10-25 at 11 20 43 AM](https://github.com/codecov/engineering-team/assets/105234307/bbdcb708-20ee-463d-9fd2-553c6de6a52c)
 
 [Return to top](#contributing)
 
@@ -121,6 +123,24 @@ The footer should contain any information about **Breaking Changes** and is also
 Breaking Changes should start with the word `BREAKING CHANGE:` with a space or two newlines. The rest of the commit message is then used for this.
 
 [Return to top](#contributing)
+
+# Pull Request Descriptions
+
+## Use of `Closes`, etc.
+
+The use of the `Closes` enables automatic tracking of the issue through it's life cycle and will automatically close the issue when the PR is merged.
+
+There are a host of other keywords that you can use that accomplish linking PRs with Issues, which you can read more about [here](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+
+Example:
+
+```
+...
+
+Closes <link to ticket>
+
+...
+```
 
 # Code Review
 
