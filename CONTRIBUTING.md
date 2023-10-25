@@ -126,9 +126,11 @@ Breaking Changes should start with the word `BREAKING CHANGE:` with a space or t
 
 # Pull Request Descriptions
 
-## Use of `Closes`
+## Use of `Closes`, etc.
 
 The use of the `Closes` enables automatic tracking of the issue through it's life cycle and will automatically close the issue when the PR is merged.
+
+There are a host of other keywords that you can use that accomplish linking PRs with Issues, which you can read more about [here](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
 Example:
 
